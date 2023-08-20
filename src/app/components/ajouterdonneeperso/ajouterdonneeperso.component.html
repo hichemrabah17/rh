@@ -1,0 +1,91 @@
+<h2>Ajouter un perso</h2>
+<div class="container mt-5">
+    <form>
+        <!-- ID Donnee Field -->
+        <div class="form-group">
+            <label for="idDonnee">ID Donnee:</label>
+            <input type="number" class="form-control" [(ngModel)]="idDonnee" id="idDonnee" name="idDonnee" placeholder="Enter ID Donnee">
+        </div>
+
+        <!-- Date de Naissance Field -->
+        <div class="form-group">
+            <label for="dateNaissance">Date de Naissance:</label>
+            <input type="date" class="form-control" [(ngModel)]="dateNaissance"  id="dateNaissance" name="dateNaissance">
+        </div>
+
+        <!-- Adresse Field -->
+        <div class="form-group">
+            <label for="adresse">Adresse:</label>
+            <input type="text" class="form-control"  [(ngModel)]="adresse"  id="adresse" name="adresse" placeholder="Enter Adresse">
+        </div>
+
+        <!-- Numéro de Téléphone Field -->
+        <div class="form-group">
+            <label for="numeroTelephone">Numéro de Téléphone:</label>
+            <input type="text" class="form-control" [(ngModel)]="numeroTelephone"  id="numeroTelephone" name="numeroTelephone" placeholder="Enter Numéro de Téléphone">
+        </div>
+
+        <!-- Service Field -->
+        <div class="form-group">
+            <label for="service">Service:</label>
+            <input type="text" class="form-control" [(ngModel)]="service" id="service" name="service" placeholder="Enter Service">
+        </div>
+
+        <!-- Département Field -->
+        <div class="form-group">
+            <label for="departement">Département:</label>
+            <input type="text" class="form-control" [(ngModel)]="departement"  id="departement" name="departement" placeholder="Enter Département">
+        </div>
+
+        <!-- Poste Field -->
+        <div class="form-group">
+            <label for="poste">Poste:</label>
+            <input type="text" class="form-control" [(ngModel)]="poste" id="poste" name="poste" placeholder="Enter Poste">
+        </div>
+
+        <!-- Situation Familiale Field -->
+        <div class="form-group">
+            <label for="situationFamiliale">Situation Familiale:</label>
+            <input type="text" class="form-control" [(ngModel)]="situationFamiliale" id="situationFamiliale" name="situationFamiliale" placeholder="Enter Situation Familiale">
+        </div>
+
+        <!-- Numéro de Sécurité Sociale Field -->
+        <div class="form-group">
+            <label for="numeroSecuriteSociale">Numéro de Sécurité Sociale:</label>
+            <input type="text" class="form-control" [(ngModel)]="numeroSecuriteSociale" id="numeroSecuriteSociale" name="numeroSecuriteSociale" placeholder="Enter Numéro de Sécurité Sociale">
+        </div>
+
+        <!-- Image Field -->
+        <div class="form-group">
+            <label for="image">Image:</label>
+            <input type="image" class="form-control" [(ngModel)]="image" id="image" name="image" placeholder="Enter Image URL">
+        </div>
+
+        <!-- CIN Field -->
+        <div class="form-group">
+            <label for="cin">CIN:</label>
+            <input type="number" class="form-control" [(ngModel)]="cin"  id="cin" name="cin" placeholder="Enter CIN">
+        </div>
+
+        <!-- Date d'Embauche Field -->
+        <div class="form-group">
+            <label for="dateEmbauche">Date d'Embauche:</label>
+            <input type="date" class="form-control" [(ngModel)]="dateEmbauche"  id="dateEmbauche" name="dateEmbauche">
+        </div>
+
+        <!-- Prénom Field -->
+        <div class="form-group">
+            <label for="prenom">Prénom:</label>
+            <input type="text" class="form-control" [(ngModel)]="prenom" id="prenom" name="prenom" placeholder="Enter Prénom">
+        </div>
+
+        <!-- Nom Field -->
+        <div class="form-group">
+            <label for="nom">Nom:</label>
+            <input type="text" class="form-control" [(ngModel)]="nom"  id="nom" name="nom" placeholder="Enter Nom">
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary" (click)="Envoyer()">Envoyer</button>
+    </form>
+</div>

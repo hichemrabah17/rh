@@ -1,0 +1,31 @@
+<h2>Tous les perso</h2>
+<div class="container mt-5">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>ID Donnee</th>
+                <th>Adresse</th>
+                <th>Service</th>
+                <th>Poste</th>
+                <th>CIN</th>
+                <th>Prénom</th>
+                <th>Nom</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of allperso">
+                <td>{{i.idDonnee}}</td>
+                <td>{{i.adresse}}</td>
+                <td>{{i.service}}</td>
+                <td>{{i.poste}}</td>
+                <td>{{i.cin}}</td>
+                <td>{{i.prenom}}</td>
+                <td>{{i.nom}}</td> 
+                <td>  <button class="btn btn-danger btn-sm" >Supprimer</button>
+                    <button class="btn btn-primary btn-sm" >Modifier</button>
+                    <button class="btn btn-success btn-sm" [routerLink]="['/tableaubordRH/detailsperso', i.idDonnee]" >Details</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
